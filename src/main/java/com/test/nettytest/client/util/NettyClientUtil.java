@@ -1,4 +1,4 @@
-package com.test.nettytest.client;
+package com.test.nettytest.client.util;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -23,18 +23,18 @@ public class NettyClientUtil
 	public static final int SERVER_PORT = Integer.parseInt(getPropertiesValueByKey("netty-port"));
 
 	/**
-	 * Netty Client 的启动参数 线程连接池大小（1:1 方式）
+	 * Netty Client 的启动参数 线程连接池大小
 	 */
 	public static final int THREAD_POOL_SIZE = Integer.parseInt(getPropertiesValueByKey("netty-client-threadpoolsize"));
 	/**
-	 * Netty Client 的启动参数 每条线程要启动的连接数（1:N 方式）
+	 * Netty Client 的启动参数 每条线程要启动的连接数
 	 */
 	public static final int PER_THREAD_CONNETIONS = Integer
 			.parseInt(getPropertiesValueByKey("netty-client-perthreadconnection"));
 	/**
-	 * Netty Client 的启动参数 运行方式（1:1 或者 1:N）
+	 * 车号生成段
 	 */
-	public static final String RUN_TYPE = getPropertiesValueByKey("netty-client-runtype");
+	public static final String BUSID_SEGMENT = getPropertiesValueByKey("netty-client-busidsegment").toUpperCase();
 	/**
 	 * 发送注册信息间隔
 	 */

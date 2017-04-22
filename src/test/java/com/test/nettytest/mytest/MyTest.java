@@ -1,12 +1,8 @@
 package com.test.nettytest.mytest;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
 import org.junit.Test;
 
-import com.test.nettytest.client.NettyClientUtil;
+import com.test.nettytest.client.pojo.NettyClientCommand;
 
 public class MyTest
 {
@@ -137,9 +133,11 @@ public class MyTest
 		
 //		System.out.println(Integer.parseInt("fa", 16));
 		
-		long l = (61*60)*1000;
+//		long l = (61*60)*1000;
 //		long l = 1000;
 //		Date date = new Date(l);
-		System.out.println(getFormatTime(l));
+//		System.out.println(getFormatTime(l));
+		
+		System.out.println(NettyClientCommand.busIdDeque.size());
 	}
 }

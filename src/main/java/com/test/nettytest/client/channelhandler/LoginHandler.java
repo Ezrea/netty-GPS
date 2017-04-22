@@ -4,11 +4,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-import com.test.nettytest.client.NettyClientCommand;
 import com.test.nettytest.client.NettyClientInSingleConnetion;
-import com.test.nettytest.client.NettyClientUtil;
-import com.test.nettytest.client.ThreadInfoFile;
+import com.test.nettytest.client.pojo.NettyClientCommand;
 import com.test.nettytest.client.pojo.ThreadInfo;
+import com.test.nettytest.client.util.NettyClientUtil;
+import com.test.nettytest.client.util.ThreadInfoFile;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;

@@ -1,4 +1,4 @@
-package com.test.nettytest.client;
+package com.test.nettytest.client.util;
 
 import java.io.BufferedWriter;
 import java.io.File;
